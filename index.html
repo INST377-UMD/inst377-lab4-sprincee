@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang-="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INST377 - Lab 4</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="pageHeading">INST377 - Lab 4</h1>
+
+        <div class="section">
+            <form id="alertForm" onsubmit="showAlert(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <button type="submit">Alert Me!</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <button onclick="changeColor()">Change color!</button>
+        </div>
+
+        <div class="section">
+            <form id="textform" onsubmit="validateText(event)">
+                <label for="textInput">Text Tester:</label>
+                <input type="text" id="textInput">
+                <button type="submit">Validate Text!</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <button onclick="addText()">Add Text!</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
